@@ -1,0 +1,124 @@
+.ImageContainer{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+.menu-button{
+    background-color: transparent;
+    border: none;
+    background-image: url("http://getdrawings.com/free-icon-bw/mobile-menu-icon-10.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 38px;
+    height: 38px;
+}
+
+@media screen and (max-width: 600px) {
+    .leftMenu{
+        display: none;
+        position: fixed;
+        left: 0px;
+        top: 51px;
+        width: 100%;
+        background-color: #99636377;
+    }
+    .menu-button {
+        display: inline-block;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menu-button {
+        display: none;
+        
+    }
+    .leftMenu {
+        background-color: white;
+        width: 250px;
+        display: block!important;
+        margin-top: 52px;
+    }
+}
+
+.menu-active {
+    display: block;
+}
+
+.menu-inactive{
+    display: none;
+}
+
+.leftMenu {
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    padding-top: 0px;
+    z-index: 10;
+    
+}
+.left-container {
+    display: inline-block;
+    margin-top: 0px;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+
+.search-container{
+    border-radius: 50%;
+}
+
+.select-status, .select-gender{
+    width: 90%;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.products{
+    padding-top: 0px;
+    margin-top: 30px;
+    border-left : solid 1px grey;
+    height: 100%;
+    display: table;
+}
+
+.pagination{
+    display: inline;
+    float: right;
+    margin-right: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.30fr 0.70fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header" "sidebar main";
+  }
+  
+  .mobileview {
+    grid-template-columns: 0fr 1fr;
+  }
+  
+  .mobileview.sidebar {
+    float: left;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: yellow;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightblue;
+  }

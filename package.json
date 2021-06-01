@@ -1,0 +1,51 @@
+{
+  "name": "react-shop",
+  "version": "0.2.0",
+  "homepage": ".",
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "react-scripts": "^3.4.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.14.0",
+    "axios": "^0.21.1",
+    "bootstrap": "3.4.1",
+    "classnames": "2.3.1",
+    "faster-react-tabs": "1.0.4",
+    "paginator": "1.0.0",
+    "prop-types": "15.7.2",
+    "react": "16.14.0",
+    "react-accessible-tabs": "^0.3.3",
+    "react-bootstrap": "1.6.0",
+    "react-dom": "16.14.0",
+    "react-icons": "4.2.0",
+    "react-js-pagination": "^3.0.3",
+    "react-redux": "7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scroll-up-button": "^1.6.4",
+    "react-search-field": "^1.2.1",
+    "react-syntax-highlighter": "15.4.3",
+    "react-tabs": "^3.2.2",
+    "reactjs-dropdown-component": "1.2.0",
+    "redux": "4.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,38 @@
+.product-list {
+  padding: 20;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.product-list__item {
+  list-style: none;
+  width: 32%;
+  display: block;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .product-list__item{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-list__item{
+    width: 90%;
+  }
+}
+
+.body {
+  display: inline-flex;
+}
+.searchComponent{
+  margin: 20px;
+}
+
+.character, .gender{
+  margin: 20px;
+}
